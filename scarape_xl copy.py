@@ -30,8 +30,10 @@ from playwright.async_api import async_playwright
 # KONFIGURASI
 # ─────────────────────────────────────────────────────────────
 KECAMATAN = [
-    "Tamalate", "Rappocini", "Makassar",
-    "Ujung Pandang", 
+    "Mariso", "Mamajang", "Tamalate", "Rappocini", "Makassar",
+    "Ujung Pandang", "Wajo", "Bontoala", "Ujung Tanah", "Tallo",
+    "Panakkukang", "Manggala", "Biringkanaya", "Tamalanrea",
+    "Kepulauan Sangkarrang",
 ]
 
 KATEGORI = [
@@ -165,8 +167,8 @@ KATEGORI = [
 KATEGORI = list(dict.fromkeys(KATEGORI))
 
 KEYWORDS        = [f"{kat} {kec} Makassar" for kec in KECAMATAN for kat in KATEGORI]
-OUTPUT_FILE     = "data new/data_usaha_yi.xlsx"
-CHECKPOINT_FILE = "data new/checkpoint_yi.txt"
+OUTPUT_FILE     = "data new/data_usaha_makassar.xlsx"
+CHECKPOINT_FILE = "data new/checkpoint_usaha.txt"
 MAX_HASIL       = 60
 DELAY_ANTAR_KW  = (3, 7)
 
